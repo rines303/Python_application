@@ -42,7 +42,7 @@ result_string = welcom_message.decode("utf8") # the return will be in bytes, so 
 top = Tk()
 top.resizable(width=False, height=False)
 top.geometry("500x500")
-background_image = PhotoImage(file ="seigaiha.png")
+background_image = PhotoImage(file ="bg1.png")
 bg_image = Label( top,image=background_image, bd="0px" )
 bg_image.pack()
 bg_image.place(x=0,y=0)
@@ -56,6 +56,9 @@ label2 = Label( top, textvariable=message, relief=RAISED, bd="0px" )
 message.set(result_string)
 label2.pack()
 label2.place(x=300,y=20)
+
+
+
 
 
 
