@@ -9,6 +9,7 @@ def send_request():
     clients_input=E1.get()
     soc.send(clients_input.encode("utf8"))
     B2['state']='normal'
+
     pass
 
 def recive_request():
@@ -17,6 +18,7 @@ def recive_request():
     var.set(result_string)
     B2['state']='disabled'
     pass
+
 
 def exit_button():
     top.destroy()
