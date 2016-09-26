@@ -59,7 +59,6 @@ label2.place(x=300,y=20)
 
 
 
-
 L1 = Label(top, text="Input")
 L1.pack( side = LEFT)
 L1.place(x=40,y=20)
