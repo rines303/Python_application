@@ -2,8 +2,6 @@ import socket
 import random
 from tkinter import *
 
-
-
 def send_request():
 
     clients_input=E1.get()
