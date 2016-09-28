@@ -80,8 +80,8 @@ B3.place(x=400,y=400)
 
 B.bind('<Enter>', enterB)
 B.bind('<Leave>', leaveB)
-if (result_string == 'stop'):
-    soc.close()
+#if (result_string == 'stop'):
+   # soc.close()
 
 
 #while (result_string != 'stop'):

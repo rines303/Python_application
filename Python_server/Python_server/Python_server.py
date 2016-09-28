@@ -81,7 +81,7 @@ def accept(_ip, _port):
 #                   NGINX STATUS SEND TO CLIENT
 #-------------------------------------------------------------------------------
 def nginx_status_send(conn):
-    p = os.popen('sudo service nginx status | grep "active " | cut -c -27',"r")
+    p = os.popen("sudo service nginx status | grep '[A]ctive' | awk '{print $2}'","r")
     out = ''
     while 1:
        line = p.readline()
@@ -162,6 +162,7 @@ def client_thread(conn, ip, port,  MAX_BUFFER_SIZE = 4096):
             message = "\n Wrong command!!! \n"
             encode = message.encode("utf8")  # encode the result string
             conn.sendall(encode)  # send it to client
+            time.sleep(1)
 
 
          ######## start progress bar #####

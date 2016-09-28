@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/">
+    <file>button.png</file>
+    <file>bad.png</file>
+    <file>button_color.png</file>
+    <file>bg1.png</file>
+    <file>seigaiha.png</file>
+  </qresource>
+</RCC>
